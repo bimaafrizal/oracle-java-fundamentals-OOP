@@ -1,0 +1,20 @@
+package Person;
+
+public class driverMahasiswa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Mahasiswa m1 = new Mahasiswa("Bima", "Afrizal", "Malna", null, "V3420018", 4, "D3Ti","Diploma", 2020);
+		Person p1 = new Person("Bima", "Afrizal", "Malna", null);
+		
+		
+		System.out.print(p1.getNama());
+		System.out.println(m1.getNIM());
+		System.out.println(m1.getIPK());
+		System.out.println(m1.getProdi());
+		System.out.println(m1.getStrata());
+		System.out.println(m1.getTahunMasuk());
+		//System.out.println(m1.hitungIPK());
+	}
+}

@@ -1,0 +1,83 @@
+package Person;
+
+import java.util.Date;
+
+public class Mahasiswa extends Person{
+	private String NIM;
+	private float IPK;
+	private String Prodi;
+	private String Strata;
+	private int tahunMasuk;
+	
+
+	public Mahasiswa(String nDepan, String nTengah, String nBelakang, Date tglLahir) {
+		super(nDepan, nTengah, nBelakang, tglLahir);
+		
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Mahasiswa(String nDepan, String nTengah, String nBelakang, Date tglLahir, String NIM, float IPK, String Prodi, String Strata, int tahunMasuk) {
+		// TODO Auto-generated constructor stub
+		super(nDepan, nTengah, nBelakang, tglLahir);
+		this.NIM = NIM;
+		this.IPK = IPK;
+		this.Prodi = Prodi;
+		this.Strata = Strata;
+		this.tahunMasuk = tahunMasuk;
+	}
+	
+	public void setNIM(String NIM) {
+		this.NIM = NIM;
+	}
+	public void setIPK(float IPK) {
+		this.IPK = IPK;
+	}
+	public void setProdi(String Prodi) {
+		this.Prodi = Prodi;
+	}
+	public void setStrata(String Strata) {
+		this.Strata = Strata;
+	}
+	public void setTahunMasuk(int tahunMasuk) {
+		this.tahunMasuk = tahunMasuk;
+	}
+	
+	public String getNIM() {
+		return NIM;
+	}
+	public float getIPK() {
+		return IPK;
+	}
+	public String getProdi() {
+		return Prodi;
+	}
+	public String getStrata() {
+		return Strata;
+	}
+	public int getTahunMasuk() {
+		return tahunMasuk;
+	}
+	
+	String[] ipk = {"A", "A-", "B+", "B", "B-", "C+", "C", "D", "E"};
+	
+	public void hitungIPK(float newIpk) {
+		if(newIpk == 4) {
+			System.out.println(ipk[0]);
+		} else if (newIpk >= 3.67 ) {
+			System.out.println(ipk[1]);
+		} else if(newIpk >= 3.33) {
+			System.out.println(ipk[2]);
+		}else if(newIpk >= 2.67) {
+			System.out.println(ipk[3]);
+		}else if(newIpk >= 2.33) {
+			System.out.println(ipk[4]);
+		}else if(newIpk >= 2) {
+			System.out.println(ipk[5]);
+		}else if(newIpk >= 1) {
+			System.out.println(ipk[6]);
+		}else if(newIpk >= 0) {
+			System.out.println(ipk[7]);
+		}	
+	}
+			
+} 

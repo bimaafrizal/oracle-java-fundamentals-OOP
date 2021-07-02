@@ -1,0 +1,60 @@
+package Person;
+
+import java.util.Date;
+
+public class Mahasiswa extends Person{
+	private String NIM;
+	private float IPK;
+	private String Prodi;
+	private String Strata;
+	private int tahunMasuk;
+	
+
+	public Mahasiswa(String nDepan, String nTengah, String nBelakang, Date tglLahir) {
+		super(nDepan, nTengah, nBelakang, tglLahir);
+		
+		// TODO Auto-generated constructor stub
+	}
+	public Mahasiswa(String nDepan, String nTengah, String nBelakang, Date tglLahir, String NIM, float IPK, String Prodi, String Strata, int tahunMasuk) {
+		super(nDepan, nTengah, nBelakang, tglLahir);
+		this.NIM = NIM;
+		this.IPK = IPK;
+		this.Prodi = Prodi;
+		this.Strata = Strata;
+		this.tahunMasuk = tahunMasuk;
+	}
+	
+	public void setNIM(String NIM) {
+		this.NIM = NIM;
+	}
+	public void setIPK(float IPK) {
+		this.IPK = IPK;
+	}
+	public void setProdi(String Prodi) {
+		this.Prodi = Prodi;
+	}
+	public void setStrata(String Strata) {
+		this.Strata = Strata;
+	}
+	public void setTahunMasuk(int tahunMasuk) {
+		this.tahunMasuk = tahunMasuk;
+	}
+	
+	public String getNIM() {
+		return NIM;
+	}
+	public float getIPK() {
+		return IPK;
+	}
+	public String getProdi() {
+		return Prodi;
+	}
+	public String getStrata() {
+		return Strata;
+	}
+	public int getTahunMasuk() {
+		return tahunMasuk;
+	}
+	
+
+}

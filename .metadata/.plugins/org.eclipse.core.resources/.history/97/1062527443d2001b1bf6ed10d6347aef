@@ -1,0 +1,13 @@
+package Person;
+
+import java.util.Date;
+
+public class driverMahasiswa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Mahasiswa m1 = new Mahasiswa("Bima", "Afrizal", "Malna", 2001-11-23, "V3420018", 4, "Diploma", 2020);
+		
+	}
+}

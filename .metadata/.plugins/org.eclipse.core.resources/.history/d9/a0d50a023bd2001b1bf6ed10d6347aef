@@ -1,0 +1,22 @@
+package Person;
+
+import java.util.Date;
+
+public class Mahasiswa extends Person{
+	private String NIM;
+	private float IPK;
+	private String Prodi;
+	private String Strata;
+	private int tahunMasuk;
+	
+
+	public Mahasiswa(String NIM, float IPK, String Prodi, String Strata, int tahunMasuk) {
+		this.NIM = NIM;
+		this.IPK = IPK;
+		this.Prodi = Prodi;
+		this.Strata = Strata;
+		this.tahunMasuk = tahunMasuk;
+		// TODO Auto-generated constructor stub
+	}
+
+}
